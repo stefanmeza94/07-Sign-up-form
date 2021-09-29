@@ -103,6 +103,10 @@ body {
   outline: none;
 }
 
+.form .input_wrapper input:focus {
+  border: 1px solid var(--violet);
+}
+
 .form .input_wrapper input::placeholder {
   color: var(--darkish);
   font-size: 14px; 
