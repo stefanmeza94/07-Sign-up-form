@@ -1,7 +1,7 @@
 :root {
   --redish: #FF7979;
   --greenihs: #38CC8B;
-  --violet: #38CC8B;
+  --violet: #5E54A4;
   --darkish: #3D3B48;
 
   --ff-primary: 'Poppins', sans-serif;
@@ -15,4 +15,213 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--ff-primary);
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(253, 111, 111, 0.55), rgba(255, 111, 111, 0.4)), url('./images/bg-intro-mobile.png');
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_content {
+  margin-bottom: 64px;
+}
+
+.text_content h2 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 327px;
+  margin: 58px auto 16px auto;
+}
+
+.text_content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+.form_content .free_box {
+  background-color: var(--violet);
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.form_content .free_box p {
+  padding: 18px;
+  max-width: 214px;
+  margin: 0 auto;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.form_content .free_box p span {
+  font-weight: 400;
+  color: white;
+}
+
+.form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.form .input_wrapper {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.form .input_wrapper input {
+  width: 100%;
+  border: 1px solid #DEDEDE;
+  font-size: 14px;
+  line-height: 26px;
+  border-radius: 5px;
+  padding: 15px 0 15px 19.4px;
+  outline: none;
+}
+
+.form .input_wrapper input::placeholder {
+  color: var(--darkish);
+  font-size: 14px; 
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.form .input_wrapper .warning {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--redish);
+  font-size: 24px;
+  display: none;
+}
+
+.form .input_wrapper .error_message {
+  font-size: 11px;
+  line-height: 16.5px;
+  width: 100%;
+  text-align: right;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: var(--redish);
+  display: none;
+}
+
+.form .btn {
+  background-color: var(--greenihs);
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px #07ce78;
+}
+
+.form .btn:hover {
+  background-color: #77E2B3;
+}
+
+.form .form_terms {
+  font-size: 11px;
+  line-height: 21px;
+  color: #BAB7D4;
+  text-align: center;
+  margin: 0 22px;
+}
+
+.form .form_terms span {
+  color: var(--redish);
+  font-weight: 700;
+}
+
+.form .input_wrapper.error .warning,
+.form .input_wrapper.error .error_message {
+  display: block
+}
+
+.form .input_wrapper.error input {
+  border: 2px solid var(--redish);
+}
+
+.form .input_wrapper.error input::placeholder {
+  color: transparent;
+}
+
+@media (min-width: 992px) {
+  .container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(253, 111, 111, 0.55), rgba(255, 111, 111, 0.55)), url('./images/bg-intro-desktop.png');
+    background-size: cover;
+    padding: 0;
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .text_content {
+    width: 525px;
+    margin-right: 45px;
+  }
+
+  .text_content h2 {
+    max-width: 100%;
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 22px 0;
+  }
+
+  .text_content p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .form_content .free_box p {
+    padding: 17px;
+    max-width: 100%;
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
 }
