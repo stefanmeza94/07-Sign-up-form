@@ -19,7 +19,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(253, 111, 111, 0.55), rgba(255, 111, 111, 0.4)), url('./images/bg-intro-mobile.png');
+  background: url('./images/bg-intro-mobile.png'), linear-gradient(to right, rgb(255,121,121), rgb(255,121,121));
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@ body {
   background-color: var(--violet);
   border-radius: 10px;
   margin-bottom: 24px;
-  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 }
 
 .form_content .free_box p {
@@ -84,7 +84,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 24px;
-  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 
 }
 
@@ -181,7 +181,7 @@ body {
 @media (min-width: 992px) {
   .container {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(253, 111, 111, 0.55), rgba(255, 111, 111, 0.55)), url('./images/bg-intro-desktop.png');
+    background: url('./images/bg-intro-desktop.png'), linear-gradient(to right, rgb(255,121,121), rgb(255,121,121));
     background-size: cover;
     padding: 0;
   }
