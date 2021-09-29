@@ -45,7 +45,6 @@ form.addEventListener('submit', function(e) {
   checkRequired([firstname, lastname, email, password]);
 });
 
-
 function removeError(inputArr) {
   inputArr.forEach(input => {
     input.parentElement.classList.remove('error');
