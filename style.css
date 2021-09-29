@@ -193,6 +193,7 @@ body {
   .text_content {
     width: 525px;
     margin-right: 45px;
+    margin-bottom: 0;
   }
 
   .text_content h2 {
